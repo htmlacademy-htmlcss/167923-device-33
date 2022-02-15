@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/167923-device-33/4/">
 </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"><img src="images/logo.png" width="145px" height="36px" alt="Девайс"></a>
+      <a class="page-header__logo"><img src="images/logo.png" ></a>
       <nav class="top-menu">
         <form action="" method="get">
           <input name="s" placeholder="Текст поиска" type="search">
@@ -15,12 +16,15 @@
         </form>
         <ul class="top-menu-list">
           <li class="top-menu-item">
+            <img src="images/login.svg" width="13px" height="11px" alt="Войти">
             <a class="top-menu-link" href="#" >Войти</a>
           </li>
           <li class="top-menu-item">
+            <img src="images/compare.svg" width="10px" height="12px" alt="Сравнить">
             <a class="top-menu-link" href="#">Сравнить</a>
           </li>
           <li class="top-menu-item">
+            <img src="images/basket.svg" width="16px" height="14px" alt="Корзина">
             <a class="top-menu-link" href="#">Корзина</a>
           </li>
         </ul>
@@ -33,6 +37,9 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -53,7 +60,7 @@
             </ul>
         </header>
         <section class="catalog-products">
-            <h2 class="visually-hidden">Фильтр:</h2>
+            <h3 class="catalog-page-setup">Фильтр:</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цвет</legend>
@@ -74,6 +81,7 @@
                 </fieldset>
                 <button class="button" type="submit">Показать</button>
             </form>
+            <h3 class="catalog-page-setup">Сортировка:</h3>
             <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Дешевые</option>
@@ -115,34 +123,36 @@
                 </a>
                 <b class="product-card-price">1500 ₽</b>
             </div>
-            <button class="button pagination-show-more" type="button">Загрузить еще</button>
-            <ul class="pagination">
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-prev pagination-disabled">
-                    <h3>Назад</h3>
-                  </a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">15</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-next" href="#">
-                    <h3>Вперед</h3>
-                  </a>
-                </li>
-              </ul>
+            <div class="pagination">
+              <button class="button pagination-show-more" type="button">Загрузить еще</button>
+              <ul class="pagination-list">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-prev">
+                      <h3>Назад</h3>
+                    </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-next" href="#">
+                      <h3>Вперед</h3>
+                    </a>
+                  </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="page-footer">
